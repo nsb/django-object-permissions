@@ -17,9 +17,9 @@ the following to your django settings:
 Usage.
 =========================================
 
-Add a permission:
-| ObjectPermission.objects.create(user=user, content_object=my_object)
+Add a permission:::
+    ObjectPermission.objects.create(user=user, content_object=my_object)
 
-Checking for permissions:
-| if request.user.has_perm('view', account):
-|     """ do something """
+Checking for permissions:::
+    if request.user.has_perm('view', account):
+        """ do something """
