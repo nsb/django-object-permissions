@@ -19,6 +19,8 @@ Usage
 
 Add a permission::
 
+    from objperms.models import ObjectPermission
+
     ObjectPermission.objects.create(user=user, content_object=my_object,
         view=True, change=False, delete=False)
 
