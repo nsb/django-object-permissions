@@ -1,11 +1,11 @@
-===========
+=========================
 django-object-permissions
-===========
+=========================
 
 Object granular permissions for Django.
 
-Configuration.
-=========================================
+Configuration
+==============
 
 In order to use django-object-permissions you must add 
 the following to your django settings:
@@ -14,12 +14,14 @@ the following to your django settings:
     * `Add 'objperms.backend.ObjectPermBackend' to AUTHENTICATION_BACKENDS`
 
 
-Usage.
-=========================================
+Usage
+=====
 
 Add a permission::
-        ObjectPermission.objects.create(user=user, content_object=my_object)
+
+    ObjectPermission.objects.create(user=user, content_object=my_object)
 
 Checking for permissions::
-        if request.user.has_perm('view', account):
+
+    if request.user.has_perm('view', account):
             """ do something """
